@@ -20,3 +20,35 @@ my solutions
 
 1.2-3: 100n^2 < 2^n -> (100n^2)^1/2 < (2^n)^1/2 -> 10n < 2^(n/2) | n = 20, 200 < 1024 | n = 15, 150 < 181 | n = 12, 120 < 64 | n = 14, 140 < 128 | 
 So n = 15 is the answer for the smallest value of n such that an algorithm running 100n^2 is faster than 2^n
+
+1-1: if f(n) takes 1microsecond then the following functions will take in t time:
+
+when f(n) = log(n), the following is size of n that can be solved in the following time (assuming f(n) can be solved in 1microsec):
+log2(n) = 10^6 -> 2^(10^6) = n -> 2^(10^6) in 1 second
+log2(n) = 60*10^6 -> log2(n) = 6*10^7 -> 2^(6*10^7) in 1 minute
+2^(6*10^7 * 60) -> 2^(3.6*10^9) in 1 hour
+2^(3.6*10^9 * 24) -> 2^(8.64 * 10^10) in 1 day
+2^(30 * 8.64*10^10) -> 2^(259.2*10^10) -> 2(2.592*10^12) in 1 month
+2^(2.592*10^12 * 12) -> 2^(31.104*10^12) -> 2^(3.1104*10^13) in 1 year
+2^(3.1104*10^13 * 100) -> 2^(3.1104*10^15) in 1 century
+
+when f(n) = sqrt(n) or n^(1/2), the following is size of n that can be solved in the following time (assuming f(n) can be solved in 1microsec):
+n^(1/2) = 10^6 -> n = 10^12 in 1 second
+10^12 * 60 -> 10^12 * 6 * 10^1 -> 6 * 10^13 in 1 minute
+6 * 10^13 * 60 -> 360 * 10^13 -> 3.6 * 10^15 in 1 hour
+3.6 * 10^15 * 24 -> 86.4 * 10^15 -> 8.64 * 10^16 in 1 day
+8.64*10^16*30 -> 259.2*10^16 -> 2.592 * 10^18 in 1 month
+2.592 * 10^18 * 12 -> 3.110400 * 10^19 in 1 year
+3.110400 * 10^19 * 100 -> 3.1104 * 10^21 in 1 century
+
+when f(n) = n, the following is size of n that can be solved in the following time (assuming f(n) can be solved in 1microsec):
+10^6 in 1 second
+10^6 * 60 -> 6 * 10^7 in 1 minute
+6 * 10^7 * 60 -> 3.6 * 10^9 in 1 hour
+8.64 * 10^10 in 1 day
+2.592 * 10^12 in 1 month
+3.1104 * 10^13 in 1 year
+3.1104 * 10^15 in 1 century
+
+when f(n) = nlogn, the following is size of n that can be solved in the following time (assuming f(n) can be solved in 1microsec):
+nlogn = 10^6

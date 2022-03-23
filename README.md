@@ -48,4 +48,46 @@ when f(n) = n, the following is size of n that can be solved in the following ti
 3.1104 * 10^15 in 1 century
 
 when f(n) = nlogn, the following is size of n that can be solved in the following time (assuming f(n) can be solved in 1microsec):
-nlogn = 10^6
+nlogn = 10^6 -> 62746 in 1 second
+2801417 in 1 minute
+133378058 in 1 hour
+2755147513 in 1 day
+71870856404 in 1 month
+787089606198 in 1 year
+67699498463641 in 1 century
+
+when f(n) = n^2, the following is size of n that can be solved in the following time (assuming f(n) can be solved in 1microsec):
+n^2 = 10^6 -> 1000 in 1 second
+n^2 = 10^6 * 60 -> n^2 = 6 * 10^7 -> n = 6^(1/2) * 10^3.5 = 7745 in 1 minute
+n^2 = 10^6 * 3600 -> 3.6^(1/2) * 10^4.5 = 60,000 in 1 hour
+n^2 = 10^6 * 86400 -> 10^6 * 8.6 * 10^4 -> 8.6^1/2 * E5 -> 293257 in 1 day
+n^2 = 10^6 * 2592000 -> 10^6 * 2.5 * 10^6 -> 2.5^(1/2) * E6 -> 1581138 in 1 month
+n^2 = 10^6 * 31104000 -> 10^6 * 3.1 * 10^7 -> 3.1^1/2 * E6.5 -> 5567764 in 1 year
+n^2 = 10^8 * 31104000 -> 10^8 * 3.1 * 10^7 -> 3.1^1/2 * E7.5 -> 55677643 in 1 century
+
+when f(n) = n^3, the following is size of n that can be solved in the following time (assuming f(n) can be solved in 1microsec):
+n^3 = 10^6 -> 100 in 1 second
+n^3 = 10^6 * 60 -> 391 in 1 minute
+n^3 = 10^6 * 3600 -> 1532 in 1 hour
+n^3 = 10^6 * 86400 -> 4420 in 1 day
+n^3 = 10^6 * 2592000 -> 13736 in 1 month
+n^3 = 10^6 * 31104000 -> 31448 in 1 year
+n^3 = 10^8 * 31104000 -> 145972 in 1 century
+
+when f(n) = 2^n, the following is size of n that can be solved in the following time (assuming f(n) can be solved in 1microsec):
+2^n = 10^6 -> log2(10^6) -> 19 in 1 second
+2^n  = log2(10^6 * 60) -> 25 in 1 minute
+2^n  = log2(10^6 * 3600) -> 31 in 1 hour
+2^n  = log2(10^6 * 86400) -> 36 in 1 day
+2^n  = log2(10^6 * 2592000) -> 41 in 1 month
+2^n  = log2(10^6 * 31104000) -> 44 in 1 year
+2^n  = log2(10^8 * 31104000) -> 51 in 1 century
+
+when f(n) = n!, the following is size of n that can be solved in the following time (assuming f(n) can be solved in 1microsec):
+n! = 10^6 -> 10^6 -> 9 in 1 second
+n!  = 10^7 * 6 -> 11 in 1 minute
+n!  = 10^9 * 3.600 -> 12 in 1 hour
+n!  = 10^10 * 8.6400 -> 13 in 1 day
+n!  = 10^12 * 2.592000 -> 15 in 1 month
+n!  = 10^13 * 3.1104000 -> 16 in 1 year
+n!  = 10^15 * 3.1104000 -> 17 in 1 century

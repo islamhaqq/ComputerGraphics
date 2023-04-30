@@ -1,5 +1,7 @@
-# intro-to-algorithms-cormen-solutions
-my solutions
+# "Introduction to Algorithms" by Cormen, Leiserson, Rivest, Stein (CRLS)
+
+
+## My Solutions
 
 1.1-1: A real world example that requires sorting would be simple todos, or backlogs that you want to do in priority. Or dictionaries, that sort words alphabetically, if you wanted to develop a dictionary where a user can input word, then to quickly find the word you need to have all words sorted. Computing a convex hull (making a small shape with rubber band around nails) could be to create a fence in a zoo or a urban planning of a lake or park given a certain budget for park area.
 
